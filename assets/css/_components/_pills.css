@@ -1,0 +1,30 @@
+.pills ul {
+  display: flex;
+  flex-direction: row;
+  animation: pills 1s ease-in-out;
+}
+
+.pills ul li { 
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 15px;
+  margin: 0 10px ;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.pills ul li:first-child {
+  margin-left: 0;
+}
+
+@keyframes pills {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+    
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
